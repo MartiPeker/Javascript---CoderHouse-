@@ -25,10 +25,10 @@ switch(gatito){
     case "tricolor":
         source_image(tricolor);
         break;
-    case "No quiero":
-        alert("Es una lastima, pero en caso de que quieras adoptar siempre estas a tiempo de actualizar! :)")
+    case "no quiero":
+        alert("Es una lastima, pero en caso de que quieras adoptar siempre estas a tiempo de actualizar! :)");
         break;
     default:
-        alert("Por favor, actualiza y elegi alguna de las opciones mencionadas anteriormente para que un gatito tenga casa!")
+        alert("Por favor, actualiza y elegi alguna de las opciones mencionadas anteriormente para que un gatito tenga casa!");
         break;
 }
