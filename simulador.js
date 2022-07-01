@@ -30,4 +30,5 @@ switch(gatito){
         break;
     default:
         alert("Por favor, actualiza y elegi alguna de las opciones mencionadas anteriormente para que un gatito tenga casa!")
+        break;
 }
