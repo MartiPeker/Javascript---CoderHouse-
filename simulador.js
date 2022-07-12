@@ -6,12 +6,18 @@ let tricolor= "./images/tricolor.jpg";
 function source_image(src){
     var image = document.createElement("img");
     image.src = src;
-    document.write("Acá está tu gatito!.");
-    document.write("</br>");
+    document.write("Acá está tu gatito!." + "</br>");
     document.body.appendChild(image);
 }
 
-let gatito =prompt("Hola! ¿Te gustaria adoptar un gatito? Elija una opción: (Panterita) (Vaquita) (Naranjoso) (Tricolor) o (No quiero)").toLowerCase();
+let gatitos = [panterita, vaquita, naranjoso, tricolor];
+
+function obtenerImgRandom(){
+    indice = Math.round(Math.random(gatitos.length));    
+    source_image(gatitos[indice]);
+}
+
+let gatito =prompt("Hola! ¿Te gustaria adoptar un gatito? Elija una opción: (Panterita) (Vaquita) (Naranjoso) (Tricolor) (Random) o (No quiero)").toLowerCase();
 switch(gatito){
     case "panterita":
         source_image(panterita);
@@ -24,6 +30,9 @@ switch(gatito){
         break;
     case "tricolor":
         source_image(tricolor);
+        break;
+    case "random":
+        obtenerImgRandom();
         break;
     case "no quiero":
         alert("Es una lastima, pero en caso de que quieras adoptar siempre estas a tiempo de actualizar! :)");
