@@ -13,7 +13,7 @@ function source_image(src){
 let gatitos = [panterita, vaquita, naranjoso, tricolor];
 
 function obtenerImgRandom(){
-    indice = Math.round(Math.random(gatitos.length)*3,2);    
+    indice = Math.round(Math.random(gatitos.length)*3,5);    
     source_image(gatitos[indice]);
 }
 
